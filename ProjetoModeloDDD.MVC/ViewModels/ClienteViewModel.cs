@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace ProjetoModeloDDD.MVC.ViewModels
 {
-    public class Cliente
+    public class ClienteViewModel
     {
         [Key]
         public int ClienteId { get; set; }
@@ -29,6 +30,6 @@ namespace ProjetoModeloDDD.MVC.ViewModels
         public DateTime DataCadastro { get; set; }
 
         public bool Ativo { get; set; }
-        //public virtual IEnumerable<Produto> Produtos { get; set; }
+        public virtual IEnumerable<ProdutoViewModel> Produtos { get; set; }
     }
 }
