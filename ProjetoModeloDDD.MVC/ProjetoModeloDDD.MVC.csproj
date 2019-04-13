@@ -207,13 +207,13 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ProjetoModeloDDD.Application\ProjetoModeloDDD.Application.csproj">
+      <Project>{ad72efbe-1a3a-4c93-9ccc-2c6898681fbf}</Project>
+      <Name>ProjetoModeloDDD.Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ProjetoModeloDDD.Domain\ProjetoModeloDDD.Domain.csproj">
       <Project>{0e4fd4c8-12cc-484f-80a0-0b31a9e28217}</Project>
       <Name>ProjetoModeloDDD.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ProjetoModeloDDD.Infra.Data\ProjetoModeloDDD.Infra.Data.csproj">
-      <Project>{A0A44960-5E49-496F-BD41-D371D199174F}</Project>
-      <Name>ProjetoModeloDDD.Infra.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
