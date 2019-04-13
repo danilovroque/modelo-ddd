@@ -38,6 +38,7 @@ namespace ProjetoModeloDDD.MVC.Controllers
         // GET: Produtos/Create
         public ActionResult Create()
         {
+            ViewBag.ClienteId = new SelectList(_clienteApp.GetAll(), "ClienteId", "Nome");
             return View();
         }
 
